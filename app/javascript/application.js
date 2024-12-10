@@ -130,3 +130,44 @@ document.addEventListener('alpine:init', () => {
   }))
 })
 //--------------------------------------------------------
+
+document.addEventListener('alpine:init', () => {
+  Alpine.data('carousel', (carouselData = {
+      slides: [],
+  }) => ({
+      slides: carouselData.slides,
+      currentSlideIndex: 1,
+      interval: null, // Para armazenar o ID do intervalo
+      
+      init() {
+          // Configura o autoplay
+          this.startAutoplay();
+      },
+      
+      previous() {
+          if (this.currentSlideIndex > 1) {
+              this.currentSlideIndex--;
+          } else {
+              this.currentSlideIndex = this.slides.length;
+          }
+      },
+      
+      next() {
+          if (this.currentSlideIndex < this.slides.length) {
+              this.currentSlideIndex++;
+          } else {
+              this.currentSlideIndex = 1;
+          }
+      },
+      
+      startAutoplay() {
+          this.interval = setInterval(() => {
+              this.next();
+          }, 3000); // Troca de slide a cada 3 segundos
+      },
+      
+      stopAutoplay() {
+          clearInterval(this.interval);
+      },
+  }));
+});
