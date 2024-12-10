@@ -1,0 +1,2454 @@
+Started GET "/" for ::1 at 2024-12-08 23:38:43 -0300
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for PagesController):
+  
+actionpack (7.0.8.6) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.8.6) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.8.6) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.8.6) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.8.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.8.6) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.8.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.8.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.8.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.8.6) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.10) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.10) lib/rack/etag.rb:27:in `call'
+rack (2.2.10) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.10) lib/rack/head.rb:12:in `call'
+actionpack (7.0.8.6) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.8.6) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.10) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.10) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.8.6) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.8.6) lib/active_record/migration.rb:638:in `call'
+actionpack (7.0.8.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.8.6) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.8.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.8.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8.6) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.8.6) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.8.6) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.8.6) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.8.6) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.8.6) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.8.6) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.8.6) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.8.6) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.0.8.6) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.8.6) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.10) lib/rack/method_override.rb:24:in `call'
+rack (2.2.10) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.8.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.8.6) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.8.6) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.8.6) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.8.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8.6) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.10) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.8.6) lib/action_dispatch/middleware/host_authorization.rb:138:in `call'
+railties (7.0.8.6) lib/rails/engine.rb:530:in `call'
+puma (5.6.9) lib/puma/configuration.rb:252:in `call'
+puma (5.6.9) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.9) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.9) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.9) lib/puma/server.rb:443:in `process_client'
+puma (5.6.9) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for ::1 at 2024-12-08 23:39:26 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 96)
+  Rendered layout layouts/application.html.erb (Duration: 317.8ms | Allocations: 69283)
+Completed 200 OK in 324ms (Views: 319.4ms | ActiveRecord: 0.0ms | Allocations: 72011)
+
+
+Started GET "/" for ::1 at 2024-12-08 23:39:39 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 2209)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 3005)
+
+
+Started GET "/" for ::1 at 2024-12-08 23:43:11 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 3350)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 4143)
+
+
+Started GET "/" for ::1 at 2024-12-08 23:43:12 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 1827)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 2074)
+
+
+Started GET "/" for ::1 at 2024-12-08 23:43:40 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 2205)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 2999)
+
+
+Started GET "/" for ::1 at 2024-12-08 23:43:41 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 1806)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 2052)
+
+
+Started GET "/" for ::1 at 2024-12-08 23:43:41 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1793)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 2036)
+
+
+Started GET "/" for ::1 at 2024-12-08 23:43:41 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 1823)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 2066)
+
+
+Started GET "/" for ::1 at 2024-12-08 23:43:41 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 1808)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 2051)
+
+
+Started GET "/" for ::1 at 2024-12-08 23:43:50 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 2173)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 2965)
+
+
+Started GET "/" for ::1 at 2024-12-08 23:44:17 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2175)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 2968)
+
+
+Started GET "/" for ::1 at 2024-12-08 23:58:38 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 296)
+  Rendered layout layouts/application.html.erb (Duration: 174.8ms | Allocations: 22427)
+Completed 200 OK in 202ms (Views: 181.7ms | ActiveRecord: 0.0ms | Allocations: 26306)
+
+
+Started GET "/" for ::1 at 2024-12-08 23:58:40 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 1799)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 2045)
+
+
+Started GET "/" for ::1 at 2024-12-08 23:59:04 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 110)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 3389)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.0ms | Allocations: 4186)
+
+
+Started GET "/" for ::1 at 2024-12-09 00:00:23 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 249)
+  Rendered layout layouts/application.html.erb (Duration: 38.5ms | Allocations: 3501)
+Completed 200 OK in 48ms (Views: 45.2ms | ActiveRecord: 0.0ms | Allocations: 4294)
+
+
+Started GET "/" for ::1 at 2024-12-09 00:04:43 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 129)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 3370)
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 4165)
+
+
+Started GET "/" for ::1 at 2024-12-09 00:12:29 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 248)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 2324)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 3118)
+
+
+Started GET "/" for ::1 at 2024-12-09 00:12:33 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 1806)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 2052)
+
+
+Started GET "/" for ::1 at 2024-12-09 00:12:37 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 1808)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 2051)
+
+
+Started GET "/" for ::1 at 2024-12-09 00:12:38 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 1817)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 2060)
+
+
+Started GET "/" for ::1 at 2024-12-09 00:13:15 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 248)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 2351)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 3143)
+
+
+Started GET "/" for ::1 at 2024-12-09 00:13:16 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 1814)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 2058)
+
+
+Started GET "/" for ::1 at 2024-12-09 00:13:17 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 1817)
+Completed 200 OK in 12ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 2061)
+
+
+Started GET "/" for ::1 at 2024-12-09 00:22:31 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 438)
+  Rendered layout layouts/application.html.erb (Duration: 86.1ms | Allocations: 23897)
+Completed 200 OK in 97ms (Views: 88.5ms | ActiveRecord: 0.0ms | Allocations: 27776)
+
+
+Started GET "/node_modules/tw-elements/js/tw-elements.umd.min.js" for ::1 at 2024-12-09 00:22:31 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/node_modules/tw-elements/js/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 00:25:22 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 131.5ms | Allocations: 14857)
+Completed 200 OK in 133ms (Views: 132.9ms | ActiveRecord: 0.0ms | Allocations: 15105)
+
+
+Started GET "/node_modules/tw-elements/js/tw-elements.umd.min.js" for ::1 at 2024-12-09 00:25:22 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/node_modules/tw-elements/js/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 00:25:24 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 1812)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 2057)
+
+
+Started GET "/node_modules/tw-elements/js/tw-elements.umd.min.js" for ::1 at 2024-12-09 00:25:24 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/node_modules/tw-elements/js/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 00:25:24 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 1803)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 2047)
+
+
+Started GET "/node_modules/tw-elements/js/tw-elements.umd.min.js" for ::1 at 2024-12-09 00:25:24 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/node_modules/tw-elements/js/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 00:25:25 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 1825)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 2072)
+
+
+Started GET "/node_modules/tw-elements/js/tw-elements.umd.min.js" for ::1 at 2024-12-09 00:25:25 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/node_modules/tw-elements/js/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 00:25:26 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 1812)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 2057)
+
+
+Started GET "/node_modules/tw-elements/js/tw-elements.umd.min.js" for ::1 at 2024-12-09 00:25:26 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/node_modules/tw-elements/js/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 00:25:26 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1815)
+Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 2058)
+
+
+Started GET "/node_modules/tw-elements/js/tw-elements.umd.min.js" for ::1 at 2024-12-09 00:25:26 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/node_modules/tw-elements/js/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 00:25:26 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 1818)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 2061)
+
+
+Started GET "/node_modules/tw-elements/js/tw-elements.umd.min.js" for ::1 at 2024-12-09 00:25:27 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/node_modules/tw-elements/js/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 00:25:27 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 1821)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 2064)
+
+
+Started GET "/node_modules/tw-elements/js/tw-elements.umd.min.js" for ::1 at 2024-12-09 00:25:27 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/node_modules/tw-elements/js/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 00:25:27 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 1812)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 2055)
+
+
+Started GET "/node_modules/tw-elements/js/tw-elements.umd.min.js" for ::1 at 2024-12-09 00:25:27 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/node_modules/tw-elements/js/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 00:25:27 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 1804)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 2049)
+
+
+Started GET "/node_modules/tw-elements/js/tw-elements.umd.min.js" for ::1 at 2024-12-09 00:25:27 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/node_modules/tw-elements/js/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 00:25:27 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 1809)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 2052)
+
+
+Started GET "/node_modules/tw-elements/js/tw-elements.umd.min.js" for ::1 at 2024-12-09 00:25:27 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/node_modules/tw-elements/js/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 00:25:28 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 1810)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 2055)
+
+
+Started GET "/node_modules/tw-elements/js/tw-elements.umd.min.js" for ::1 at 2024-12-09 00:25:28 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/node_modules/tw-elements/js/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 00:25:28 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 1830)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 2075)
+
+
+Started GET "/node_modules/tw-elements/js/tw-elements.umd.min.js" for ::1 at 2024-12-09 00:25:28 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/node_modules/tw-elements/js/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 00:25:28 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 1827)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 2072)
+
+
+Started GET "/node_modules/tw-elements/js/tw-elements.umd.min.js" for ::1 at 2024-12-09 00:25:28 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/node_modules/tw-elements/js/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 00:25:28 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 1830)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 2075)
+
+
+Started GET "/node_modules/tw-elements/js/tw-elements.umd.min.js" for ::1 at 2024-12-09 00:25:28 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/node_modules/tw-elements/js/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 00:25:28 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 1812)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 2055)
+
+
+Started GET "/node_modules/tw-elements/js/tw-elements.umd.min.js" for ::1 at 2024-12-09 00:25:29 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/node_modules/tw-elements/js/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 00:25:39 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 1815)
+Completed 200 OK in 3ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 2058)
+
+
+Started GET "/node_modules/tw-elements/js/tw-elements.umd.min.js" for ::1 at 2024-12-09 00:25:39 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/node_modules/tw-elements/js/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 00:25:39 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 1815)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 2060)
+
+
+Started GET "/node_modules/tw-elements/js/tw-elements.umd.min.js" for ::1 at 2024-12-09 00:25:39 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/node_modules/tw-elements/js/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 00:25:40 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 1818)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 2063)
+
+
+Started GET "/node_modules/tw-elements/js/tw-elements.umd.min.js" for ::1 at 2024-12-09 00:25:40 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/node_modules/tw-elements/js/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 00:25:40 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 1812)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 2057)
+
+
+Started GET "/node_modules/tw-elements/js/tw-elements.umd.min.js" for ::1 at 2024-12-09 00:25:40 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/node_modules/tw-elements/js/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 00:25:41 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 1851)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 2096)
+
+
+Started GET "/node_modules/tw-elements/js/tw-elements.umd.min.js" for ::1 at 2024-12-09 00:25:41 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/node_modules/tw-elements/js/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 00:25:41 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 1835)
+Completed 200 OK in 24ms (Views: 24.2ms | ActiveRecord: 0.0ms | Allocations: 2080)
+
+
+Started GET "/node_modules/tw-elements/js/tw-elements.umd.min.js" for ::1 at 2024-12-09 00:25:41 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/node_modules/tw-elements/js/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 00:25:46 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 438)
+  Rendered layout layouts/application.html.erb (Duration: 234.1ms | Allocations: 22950)
+Completed 200 OK in 242ms (Views: 236.5ms | ActiveRecord: 0.0ms | Allocations: 26830)
+
+
+Started GET "/node_modules/tw-elements/js/tw-elements.umd.min.js" for ::1 at 2024-12-09 00:25:47 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/node_modules/tw-elements/js/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 00:27:30 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 438)
+  Rendered layout layouts/application.html.erb (Duration: 140.6ms | Allocations: 24089)
+Completed 200 OK in 157ms (Views: 148.6ms | ActiveRecord: 0.0ms | Allocations: 27969)
+
+
+Started GET "/node_modules/tw-elements/js/tw-elements.umd.min.js" for ::1 at 2024-12-09 00:27:30 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/node_modules/tw-elements/js/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 00:28:00 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 248)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 2329)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 3123)
+
+
+Started GET "/" for ::1 at 2024-12-09 00:28:01 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 1800)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 2047)
+
+
+Started GET "/" for ::1 at 2024-12-09 00:28:02 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 1814)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 2058)
+
+
+Started GET "/" for ::1 at 2024-12-09 00:28:03 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 1822)
+Completed 200 OK in 5ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 2067)
+
+
+Started GET "/" for ::1 at 2024-12-09 00:28:35 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 251)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 2312)
+Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 3107)
+
+
+Started GET "/node_modules/tw-elements/dist/js/tw-elements.umd.min.js" for ::1 at 2024-12-09 00:28:35 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/node_modules/tw-elements/dist/js/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 00:28:37 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 1836)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 2080)
+
+
+Started GET "/node_modules/tw-elements/dist/js/tw-elements.umd.min.js" for ::1 at 2024-12-09 00:28:37 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/node_modules/tw-elements/dist/js/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 00:29:14 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 248)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 2339)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 3132)
+
+
+Started GET "/node_modules/tw-elements/dist/js/tw-elements.umd.min.js" for ::1 at 2024-12-09 00:29:14 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/node_modules/tw-elements/dist/js/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 00:29:17 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1809)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 2052)
+
+
+Started GET "/node_modules/tw-elements/dist/js/tw-elements.umd.min.js" for ::1 at 2024-12-09 00:29:17 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/node_modules/tw-elements/dist/js/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 00:29:18 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 1815)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 2060)
+
+
+Started GET "/node_modules/tw-elements/dist/js/tw-elements.umd.min.js" for ::1 at 2024-12-09 00:29:18 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/node_modules/tw-elements/dist/js/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 00:29:19 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 1819)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 2064)
+
+
+Started GET "/node_modules/tw-elements/dist/js/tw-elements.umd.min.js" for ::1 at 2024-12-09 00:29:19 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/node_modules/tw-elements/dist/js/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 10:00:16 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 431)
+  Rendered layout layouts/application.html.erb (Duration: 217.1ms | Allocations: 24181)
+Completed 200 OK in 240ms (Views: 223.5ms | ActiveRecord: 0.0ms | Allocations: 28060)
+
+
+Started GET "/main.js" for ::1 at 2024-12-09 10:00:17 -0300
+Started GET "/node_modules/tw-elements/dist/js/tw-elements.umd.min.js" for ::1 at 2024-12-09 10:00:17 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/node_modules/tw-elements/dist/js/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 10:01:09 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 244)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 2290)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.0ms | Allocations: 3087)
+
+
+Started GET "/main.js" for ::1 at 2024-12-09 10:01:09 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/main.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 10:01:12 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 1749)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 1993)
+
+
+Started GET "/main.js" for ::1 at 2024-12-09 10:01:12 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/main.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 10:02:30 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 265.6ms | Allocations: 15209)
+Completed 200 OK in 267ms (Views: 266.3ms | ActiveRecord: 0.0ms | Allocations: 15455)
+
+
+Started GET "/main.js" for ::1 at 2024-12-09 10:02:31 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/main.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 10:10:56 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 193)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 2216)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 3009)
+
+
+Started GET "/path/to/tw-elements.umd.min.js" for ::1 at 2024-12-09 10:10:56 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 10:11:39 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 193)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 2230)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 3022)
+
+
+Started GET "/path/to/tw-elements.umd.min.js" for ::1 at 2024-12-09 10:11:39 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 10:11:41 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 1795)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 2039)
+
+
+Started GET "/path/to/tw-elements.umd.min.js" for ::1 at 2024-12-09 10:11:41 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 10:11:56 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 382)
+  Rendered layout layouts/application.html.erb (Duration: 542.8ms | Allocations: 24249)
+Completed 200 OK in 560ms (Views: 548.6ms | ActiveRecord: 0.0ms | Allocations: 28128)
+
+
+Started GET "/path/to/tw-elements.umd.min.js" for ::1 at 2024-12-09 10:11:57 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/path/to/tw-elements.umd.min.js"):
+  
+Started GET "/" for ::1 at 2024-12-09 10:14:45 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 2242)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 3038)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:14:47 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 1761)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 2006)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:14:47 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 1777)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 2020)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:14:48 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 1753)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 1998)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:14:48 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 1755)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 1998)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:15:10 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 186)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2208)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 3003)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:15:31 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 249)
+  Rendered layout layouts/application.html.erb (Duration: 39.5ms | Allocations: 3448)
+Completed 200 OK in 47ms (Views: 44.9ms | ActiveRecord: 0.0ms | Allocations: 4241)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:16:22 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 146)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 3346)
+Completed 200 OK in 27ms (Views: 24.1ms | ActiveRecord: 0.0ms | Allocations: 4139)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:18:25 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 147)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 3323)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms | Allocations: 4118)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:18:44 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 147)
+  Rendered layout layouts/application.html.erb (Duration: 42.9ms | Allocations: 3342)
+Completed 200 OK in 51ms (Views: 48.2ms | ActiveRecord: 0.0ms | Allocations: 4135)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:18:53 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 147)
+  Rendered layout layouts/application.html.erb (Duration: 40.1ms | Allocations: 3347)
+Completed 200 OK in 47ms (Views: 45.4ms | ActiveRecord: 0.0ms | Allocations: 4140)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:19:05 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 147)
+  Rendered layout layouts/application.html.erb (Duration: 21.4ms | Allocations: 3354)
+Completed 200 OK in 28ms (Views: 24.9ms | ActiveRecord: 0.0ms | Allocations: 4147)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:19:21 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 147)
+  Rendered layout layouts/application.html.erb (Duration: 40.2ms | Allocations: 3337)
+Completed 200 OK in 47ms (Views: 44.8ms | ActiveRecord: 0.0ms | Allocations: 4132)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:19:52 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 147)
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 3342)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms | Allocations: 4135)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:22:08 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 250)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 2297)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.0ms | Allocations: 3095)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:22:46 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 248)
+  Rendered layout layouts/application.html.erb (Duration: 25.3ms | Allocations: 3441)
+Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.0ms | Allocations: 4238)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:23:07 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 246)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 2280)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 3073)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:23:21 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 247)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 2278)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 3071)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:23:31 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 247)
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 2290)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.0ms | Allocations: 3083)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:23:37 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 247)
+  Rendered layout layouts/application.html.erb (Duration: 35.6ms | Allocations: 3450)
+Completed 200 OK in 46ms (Views: 42.4ms | ActiveRecord: 0.0ms | Allocations: 4244)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:23:38 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 1758)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.0ms | Allocations: 2002)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:24:07 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 246)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 2283)
+Completed 200 OK in 24ms (Views: 21.2ms | ActiveRecord: 0.0ms | Allocations: 3075)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:26:48 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 126)
+  Rendered layout layouts/application.html.erb (Duration: 264.5ms | Allocations: 16757)
+Completed 200 OK in 269ms (Views: 267.4ms | ActiveRecord: 0.0ms | Allocations: 17550)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:28:25 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 1752)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 1996)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:28:26 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 1776)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 2019)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:28:26 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 1767)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 2011)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:28:26 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 1779)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 2022)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:28:27 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 1773)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 2016)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:28:27 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 1783)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 2028)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:28:27 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 1761)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 2005)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:28:27 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 1762)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 2005)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:28:27 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 1764)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 2007)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:28:27 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 1755)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 1998)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:29:47 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 146)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 2180)
+Completed 200 OK in 22ms (Views: 19.6ms | ActiveRecord: 0.0ms | Allocations: 2975)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:29:48 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 1767)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 2011)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:29:48 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 1758)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 2001)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:29:48 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 1776)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 2020)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:29:48 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 1761)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 2004)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:29:49 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 1764)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 2007)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:30:25 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 140)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2166)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 2958)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:30:26 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 1764)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 2008)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:30:27 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 1776)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 2019)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:30:27 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 1767)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 2010)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:30:27 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 1770)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 2013)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:30:27 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 1776)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 2019)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:30:27 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 1776)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 2019)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:30:27 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 1773)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 2016)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:30:28 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 1770)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 2013)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:30:43 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 140)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 2184)
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 0.0ms | Allocations: 2976)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:30:44 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 1767)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 2011)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:31:08 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 140)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 2207)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 2999)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:32:48 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 2169)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 2967)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:33:52 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 126)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 2182)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 2977)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:36:39 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 126)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 2172)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 2967)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:38:12 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 181)
+  Rendered layout layouts/application.html.erb (Duration: 45.9ms | Allocations: 3390)
+Completed 200 OK in 54ms (Views: 52.0ms | ActiveRecord: 0.0ms | Allocations: 4183)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:38:42 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 181)
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 2198)
+Completed 200 OK in 24ms (Views: 21.7ms | ActiveRecord: 0.0ms | Allocations: 2991)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:41:11 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 186)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 2224)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 3018)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:41:44 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 196)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 2237)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 3030)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:43:02 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 180)
+  Rendered layout layouts/application.html.erb (Duration: 20.6ms | Allocations: 3369)
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 0.0ms | Allocations: 4162)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:43:04 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 1764)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 2010)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:43:05 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 1764)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 2009)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:43:05 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 1782)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 2027)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:43:15 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 1782)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 2027)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:43:17 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 1767)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 2010)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:47:35 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 202)
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 3395)
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.0ms | Allocations: 4187)
+
+
+Started GET "/docs/images/blog/image-1.jpg" for ::1 at 2024-12-09 10:47:35 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/docs/images/blog/image-1.jpg"):
+  
+Started GET "/" for ::1 at 2024-12-09 10:48:17 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 203)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 2236)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 3031)
+
+
+Started GET "/docs/images/blog/image-1.jpg" for ::1 at 2024-12-09 10:48:17 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/docs/images/blog/image-1.jpg"):
+  
+Started GET "/" for ::1 at 2024-12-09 10:49:37 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 239)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 2284)
+Completed 200 OK in 18ms (Views: 16.1ms | ActiveRecord: 0.0ms | Allocations: 3077)
+
+
+Started GET "/docs/images/blog/image-1.jpg" for ::1 at 2024-12-09 10:49:37 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/docs/images/blog/image-1.jpg"):
+  
+Started GET "/docs/images/blog/image-1.jpg" for ::1 at 2024-12-09 10:49:37 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/docs/images/blog/image-1.jpg"):
+  
+Started GET "/" for ::1 at 2024-12-09 10:50:36 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 214)
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 3425)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.0ms | Allocations: 4218)
+
+
+Started GET "/img/jonathan.jpg" for ::1 at 2024-12-09 10:50:36 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/img/jonathan.jpg"):
+  
+Started GET "/img/card-left.jpg" for ::1 at 2024-12-09 10:50:36 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/img/card-left.jpg"):
+  
+Started GET "/" for ::1 at 2024-12-09 10:51:29 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 214)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 2241)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.0ms | Allocations: 3036)
+
+
+Started GET "/img/card-left.jpg" for ::1 at 2024-12-09 10:51:29 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/img/card-left.jpg"):
+  
+Started GET "/" for ::1 at 2024-12-09 10:52:04 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 225)
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 2288)
+Completed 200 OK in 28ms (Views: 25.4ms | ActiveRecord: 0.0ms | Allocations: 3083)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:53:16 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 219)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 2246)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 3039)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:53:45 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 217)
+  Rendered layout layouts/application.html.erb (Duration: 20.5ms | Allocations: 2246)
+Completed 200 OK in 33ms (Views: 28.1ms | ActiveRecord: 0.0ms | Allocations: 3039)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:55:12 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 2241)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 3034)
+
+
+Started GET "/" for ::1 at 2024-12-09 10:55:33 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 2253)
+Completed 200 OK in 30ms (Views: 26.7ms | ActiveRecord: 0.0ms | Allocations: 3046)
+
+
+Started GET "/" for ::1 at 2024-12-09 11:01:03 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 243)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 2273)
+Completed 200 OK in 24ms (Views: 21.2ms | ActiveRecord: 0.0ms | Allocations: 3066)
+
+
+Started GET "/" for ::1 at 2024-12-09 11:01:15 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 243)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 2281)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 3074)
+
+
+Started GET "/" for ::1 at 2024-12-09 11:02:57 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 243)
+  Rendered layout layouts/application.html.erb (Duration: 26.7ms | Allocations: 3443)
+Completed 200 OK in 34ms (Views: 31.7ms | ActiveRecord: 0.0ms | Allocations: 4236)
+
+
+Started GET "/" for ::1 at 2024-12-09 11:16:50 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 3405)
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.0ms | Allocations: 4198)
+
+
+Started GET "/" for ::1 at 2024-12-09 11:21:51 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 250)
+  Rendered layout layouts/application.html.erb (Duration: 48.7ms | Allocations: 3457)
+Completed 200 OK in 58ms (Views: 55.5ms | ActiveRecord: 0.0ms | Allocations: 4250)
+
+
+Started GET "/" for ::1 at 2024-12-09 11:38:38 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 250)
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 3455)
+Completed 200 OK in 28ms (Views: 26.4ms | ActiveRecord: 0.0ms | Allocations: 4248)
+
+
+Started GET "/" for ::1 at 2024-12-09 11:39:30 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 250)
+  Rendered layout layouts/application.html.erb (Duration: 24.0ms | Allocations: 3458)
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.0ms | Allocations: 4251)
+
+
+Started GET "/" for ::1 at 2024-12-09 11:40:30 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 255)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 2270)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 3068)
+
+
+Started GET "/" for ::1 at 2024-12-09 11:40:35 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 1756)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 2002)
+
+
+Started GET "/" for ::1 at 2024-12-09 11:41:48 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 250)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 2305)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 3100)
+
+
+Started GET "/" for ::1 at 2024-12-09 11:44:45 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 250)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 2291)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms | Allocations: 3085)
+
+
+Started GET "/" for ::1 at 2024-12-09 11:45:22 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 250)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 2292)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 3085)
+
+
+Started GET "/" for ::1 at 2024-12-09 11:45:55 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 250)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 2282)
+Completed 200 OK in 26ms (Views: 24.0ms | ActiveRecord: 0.0ms | Allocations: 3075)
+
+
+Started GET "/" for ::1 at 2024-12-09 11:50:40 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 245)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 2268)
+Completed 200 OK in 23ms (Views: 20.9ms | ActiveRecord: 0.0ms | Allocations: 3061)
+
+
+Started GET "/" for ::1 at 2024-12-09 12:01:20 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 249)
+  Rendered layout layouts/application.html.erb (Duration: 267.3ms | Allocations: 16833)
+Completed 200 OK in 271ms (Views: 269.4ms | ActiveRecord: 0.0ms | Allocations: 17626)
+
+
+Started GET "/" for ::1 at 2024-12-09 12:01:59 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 230.9ms | Allocations: 15177)
+Completed 200 OK in 232ms (Views: 231.6ms | ActiveRecord: 0.0ms | Allocations: 15421)
+
+
+Started GET "/" for ::1 at 2024-12-09 12:03:55 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 1757)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 2002)
+
+
+Started GET "/" for ::1 at 2024-12-09 12:05:21 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 244.5ms | Allocations: 15182)
+Completed 200 OK in 246ms (Views: 245.4ms | ActiveRecord: 0.0ms | Allocations: 15425)
+
+
+Started GET "/" for ::1 at 2024-12-09 12:05:30 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 1822)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 2065)
+
+
+Started GET "/" for ::1 at 2024-12-09 12:09:44 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 254)
+  Rendered layout layouts/application.html.erb (Duration: 319.5ms | Allocations: 15718)
+Completed 200 OK in 323ms (Views: 321.8ms | ActiveRecord: 0.0ms | Allocations: 16513)
+
+
+Started GET "/" for ::1 at 2024-12-09 12:10:16 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 251)
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 2304)
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 0.0ms | Allocations: 3101)
+
+
+Started GET "/" for ::1 at 2024-12-09 12:11:33 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 247)
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 3435)
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.0ms | Allocations: 4228)
+
+
+Started GET "/" for ::1 at 2024-12-09 12:13:08 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 246)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 2283)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 3077)
+
+
+Started GET "/" for ::1 at 2024-12-09 12:15:47 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 1764)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 2010)
+
+
+Started GET "/" for ::1 at 2024-12-09 12:15:53 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 1767)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 2012)
+
+
+Started GET "/" for ::1 at 2024-12-09 12:15:55 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 1773)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 2018)
+
+
+Started GET "/" for ::1 at 2024-12-09 12:16:00 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 1770)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 2013)
+
+
+Started GET "/" for ::1 at 2024-12-09 12:16:11 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 1758)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 2001)
+
+
+Started GET "/" for ::1 at 2024-12-09 12:18:05 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 204)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 2277)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 3069)
+
+
+Started GET "/" for ::1 at 2024-12-09 12:23:47 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 21.8ms | Allocations: 3444)
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.0ms | Allocations: 4237)
+
+
+Started GET "/" for ::1 at 2024-12-09 12:24:05 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 205)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 2280)
+Completed 200 OK in 19ms (Views: 16.3ms | ActiveRecord: 0.0ms | Allocations: 3073)
+
+
+Started GET "/" for ::1 at 2024-12-09 12:26:08 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 209)
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 3448)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.0ms | Allocations: 4241)
+
+
+Started GET "/" for ::1 at 2024-12-09 12:26:52 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2256)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 3049)
+
+
+Started GET "/" for ::1 at 2024-12-09 12:28:20 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 206)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 2278)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 3071)
+
+
+Started GET "/" for ::1 at 2024-12-09 12:29:10 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 206)
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 2275)
+Completed 200 OK in 32ms (Views: 30.1ms | ActiveRecord: 0.0ms | Allocations: 3068)
+
+
+Started GET "/" for ::1 at 2024-12-09 12:29:37 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 207)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 2288)
+Completed 200 OK in 27ms (Views: 24.0ms | ActiveRecord: 0.0ms | Allocations: 3081)
+
+
+Started GET "/" for ::1 at 2024-12-09 12:29:46 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 207)
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 2276)
+Completed 200 OK in 27ms (Views: 24.0ms | ActiveRecord: 0.0ms | Allocations: 3069)
+
+
+Started GET "/" for ::1 at 2024-12-09 12:30:00 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 206)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 2266)
+Completed 200 OK in 26ms (Views: 23.3ms | ActiveRecord: 0.0ms | Allocations: 3059)
+
+
+Started GET "/" for ::1 at 2024-12-09 12:42:15 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 265)
+  Rendered layout layouts/application.html.erb (Duration: 24.0ms | Allocations: 3509)
+Completed 200 OK in 30ms (Views: 29.3ms | ActiveRecord: 0.0ms | Allocations: 4306)
+
+
+Started GET "/" for ::1 at 2024-12-09 12:51:00 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 331)
+  Rendered layout layouts/application.html.erb (Duration: 230.5ms | Allocations: 15814)
+Completed 200 OK in 235ms (Views: 233.1ms | ActiveRecord: 0.0ms | Allocations: 16610)
+
+
+Started GET "/" for ::1 at 2024-12-09 12:54:01 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 582)
+  Rendered layout layouts/application.html.erb (Duration: 473.4ms | Allocations: 25473)
+Completed 200 OK in 493ms (Views: 480.1ms | ActiveRecord: 0.0ms | Allocations: 29352)
+
+
+Started GET "/" for ::1 at 2024-12-09 12:54:38 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 341)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 2430)
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 3229)
+
+
+Started GET "/" for ::1 at 2024-12-09 12:55:20 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 1922)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.0ms | Allocations: 2168)
+
+
+Started GET "/" for ::1 at 2024-12-09 12:55:40 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 240.0ms | Allocations: 15218)
+Completed 200 OK in 241ms (Views: 240.9ms | ActiveRecord: 0.0ms | Allocations: 15463)
+
+
+Started GET "/" for ::1 at 2024-12-09 12:56:03 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 232.7ms | Allocations: 15202)
+Completed 200 OK in 234ms (Views: 233.5ms | ActiveRecord: 0.0ms | Allocations: 15447)
+
+
+Started GET "/" for ::1 at 2024-12-09 12:56:37 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 233.6ms | Allocations: 15162)
+Completed 200 OK in 235ms (Views: 234.9ms | ActiveRecord: 0.0ms | Allocations: 15407)
+
+
+Started GET "/" for ::1 at 2024-12-09 12:57:37 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 335)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 3568)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms | Allocations: 4362)
+
+
+Started GET "/" for ::1 at 2024-12-09 12:59:20 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 338)
+  Rendered layout layouts/application.html.erb (Duration: 26.5ms | Allocations: 2419)
+Completed 200 OK in 35ms (Views: 32.8ms | ActiveRecord: 0.0ms | Allocations: 3217)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:01:09 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 336)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 2399)
+Completed 200 OK in 16ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 3194)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:01:51 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 335)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 2416)
+Completed 200 OK in 29ms (Views: 26.3ms | ActiveRecord: 0.0ms | Allocations: 3209)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:11:54 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 336)
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 3562)
+Completed 200 OK in 28ms (Views: 27.1ms | ActiveRecord: 0.0ms | Allocations: 4355)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:13:27 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 338)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 2398)
+Completed 200 OK in 31ms (Views: 28.7ms | ActiveRecord: 0.0ms | Allocations: 3193)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:15:05 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 337)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 2406)
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 3199)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:15:21 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 337)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 2388)
+Completed 200 OK in 24ms (Views: 21.7ms | ActiveRecord: 0.0ms | Allocations: 3181)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:18:33 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 1770)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 2015)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:22:47 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1220)
+  Rendered layout layouts/application.html.erb (Duration: 28.9ms | Allocations: 4448)
+Completed 200 OK in 34ms (Views: 32.1ms | ActiveRecord: 0.0ms | Allocations: 5240)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:23:03 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 781)
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 2850)
+Completed 200 OK in 35ms (Views: 32.5ms | ActiveRecord: 0.0ms | Allocations: 3643)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:26:10 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 786)
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 4029)
+Completed 200 OK in 41ms (Views: 30.2ms | ActiveRecord: 0.0ms | Allocations: 4826)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:27:26 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 686)
+  Rendered layout layouts/application.html.erb (Duration: 228.5ms | Allocations: 16195)
+Completed 200 OK in 232ms (Views: 230.6ms | ActiveRecord: 0.0ms | Allocations: 16989)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:28:38 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 686)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 2748)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 3543)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:30:39 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 663)
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 3879)
+Completed 200 OK in 28ms (Views: 26.5ms | ActiveRecord: 0.0ms | Allocations: 4672)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:34:17 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 662)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 2750)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 3543)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:34:46 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 662)
+  Rendered layout layouts/application.html.erb (Duration: 30.5ms | Allocations: 3886)
+Completed 200 OK in 35ms (Views: 33.9ms | ActiveRecord: 0.0ms | Allocations: 4680)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:35:03 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 662)
+  Rendered layout layouts/application.html.erb (Duration: 36.7ms | Allocations: 3888)
+Completed 200 OK in 46ms (Views: 42.8ms | ActiveRecord: 0.0ms | Allocations: 4681)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:36:29 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 662)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 2729)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 3522)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:37:14 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 662)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 3908)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.0ms | Allocations: 4701)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:38:39 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 662)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 2727)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.0ms | Allocations: 3521)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:39:14 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 667)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 2743)
+Completed 200 OK in 15ms (Views: 13.4ms | ActiveRecord: 0.0ms | Allocations: 3541)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:39:46 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 663)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 2749)
+Completed 200 OK in 14ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 3542)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:40:33 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 663)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 2745)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 3539)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:41:47 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 662)
+  Rendered layout layouts/application.html.erb (Duration: 39.5ms | Allocations: 3907)
+Completed 200 OK in 48ms (Views: 45.9ms | ActiveRecord: 0.0ms | Allocations: 4702)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:42:23 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 662)
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 3887)
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.0ms | Allocations: 4680)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:42:31 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 1764)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 2008)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:43:05 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 662)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 2762)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 3555)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:43:09 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 1767)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 2011)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:43:53 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 662)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 2729)
+Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 3521)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:44:21 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 662)
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 2732)
+Completed 200 OK in 29ms (Views: 26.1ms | ActiveRecord: 0.0ms | Allocations: 3525)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:45:04 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 661)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 2728)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 3521)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:50:37 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 854)
+  Rendered layout layouts/application.html.erb (Duration: 533.9ms | Allocations: 26874)
+Completed 200 OK in 552ms (Views: 540.2ms | ActiveRecord: 0.0ms | Allocations: 30753)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:51:24 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 665)
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 2738)
+Completed 200 OK in 35ms (Views: 31.7ms | ActiveRecord: 0.0ms | Allocations: 3535)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:51:40 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 661)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 2717)
+Completed 200 OK in 32ms (Views: 29.6ms | ActiveRecord: 0.0ms | Allocations: 3512)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:55:01 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 688)
+  Rendered layout layouts/application.html.erb (Duration: 264.9ms | Allocations: 17420)
+Completed 200 OK in 270ms (Views: 268.3ms | ActiveRecord: 0.0ms | Allocations: 18215)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:55:14 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 1764)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 2009)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:55:20 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 1779)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 2022)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:55:57 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 688)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 2779)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 3571)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:56:07 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 688)
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 2758)
+Completed 200 OK in 26ms (Views: 23.4ms | ActiveRecord: 0.0ms | Allocations: 3551)
+
+
+Started GET "/" for ::1 at 2024-12-09 13:56:11 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 1770)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 2014)
+
+
+Started GET "/" for ::1 at 2024-12-09 14:01:16 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 687)
+  Rendered layout layouts/application.html.erb (Duration: 257.5ms | Allocations: 17379)
+Completed 200 OK in 261ms (Views: 260.0ms | ActiveRecord: 0.0ms | Allocations: 18171)
+
+
+Started GET "/" for ::1 at 2024-12-09 14:03:36 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 663)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 2748)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.0ms | Allocations: 3544)
+
+
+Started GET "/" for ::1 at 2024-12-09 14:04:04 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 637)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 2708)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 3501)
+
+
+Started GET "/" for ::1 at 2024-12-09 14:04:12 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 1749)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 1993)
+
+
+Started GET "/" for ::1 at 2024-12-09 14:04:39 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 233.0ms | Allocations: 15216)
+Completed 200 OK in 234ms (Views: 233.8ms | ActiveRecord: 0.0ms | Allocations: 15461)
+
+
+Started GET "/" for ::1 at 2024-12-09 14:04:43 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 1770)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 2013)
+
+
+Started GET "/" for ::1 at 2024-12-09 14:06:33 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 40.9ms | Allocations: 2930)
+Completed 200 OK in 44ms (Views: 42.8ms | ActiveRecord: 0.0ms | Allocations: 3173)
+
+
+Started GET "/" for ::1 at 2024-12-09 14:06:38 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 1764)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 2007)
+
+
+Started GET "/" for ::1 at 2024-12-09 14:13:06 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 726)
+  Rendered layout layouts/application.html.erb (Duration: 291.0ms | Allocations: 17530)
+Completed 200 OK in 296ms (Views: 294.6ms | ActiveRecord: 0.0ms | Allocations: 18322)
+
+
+Started GET "/" for ::1 at 2024-12-09 14:19:29 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 683)
+  Rendered layout layouts/application.html.erb (Duration: 31.3ms | Allocations: 3906)
+Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 0.0ms | Allocations: 4702)
+
+
+Started GET "/" for ::1 at 2024-12-09 14:19:50 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 1749)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 1993)
+
+
+Started GET "/" for ::1 at 2024-12-09 14:19:53 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 1771)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 2014)
+
+
+Started GET "/" for ::1 at 2024-12-09 14:25:57 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 709)
+  Rendered layout layouts/application.html.erb (Duration: 237.5ms | Allocations: 16350)
+Completed 200 OK in 241ms (Views: 239.9ms | ActiveRecord: 0.0ms | Allocations: 17142)
+
+
+Started GET "/" for ::1 at 2024-12-09 14:27:32 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 241.7ms | Allocations: 15331)
+Completed 200 OK in 243ms (Views: 242.4ms | ActiveRecord: 0.0ms | Allocations: 15575)
+
+
+Started GET "/" for ::1 at 2024-12-09 14:28:55 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 751)
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 3982)
+Completed 200 OK in 29ms (Views: 27.7ms | ActiveRecord: 0.0ms | Allocations: 4777)
+
+
+Started GET "/" for ::1 at 2024-12-09 14:30:32 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 750)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 2835)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 3630)
+
+
+Started GET "/" for ::1 at 2024-12-10 10:45:51 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 943)
+  Rendered layout layouts/application.html.erb (Duration: 370.2ms | Allocations: 26280)
+Completed 200 OK in 385ms (Views: 373.3ms | ActiveRecord: 0.0ms | Allocations: 30159)
+
+
+Started GET "/" for ::1 at 2024-12-10 10:47:32 -0300
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 710)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 2812)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 3609)
+
+
