@@ -9,7 +9,7 @@
 /test/tmp/
 /test/version_tmp/
 /tmp/
-
+/app/assets/builds/
 # Used by dotenv library to load environment variables.
 # .env
 
@@ -37,6 +37,7 @@ build-iPhoneSimulator/
 /_yardoc/
 /doc/
 /rdoc/
+/log/development.log
 
 ## Environment normalization:
 /.bundle/
