@@ -4,7 +4,7 @@
 
 /* CSS Code */
 .swiper-wrapper {
-  width: 100%;
+  width: 150%;
   height: max-content !important;
   padding-bottom: 64px !important;
   -webkit-transition-timing-function: linear !important;
