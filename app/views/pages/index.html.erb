@@ -89,60 +89,36 @@
 <!------------------------------>
 
 <!--Cards serviços-->
-<div class="max-w-screen-xl mx-auto p-16">
-  <h1 class="mb-4 text-4xl text-center font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Conheça nossos <span class="text-blue-600 dark:text-blue-500">Serviços.</span></h1>
+
+<div x-data="carousel_bluer()" class="max-w-screen-xl mx-auto p-16">
+  <h1 class="mb-4 text-4xl text-center font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+    Conheça nossos <span class="text-blue-600 dark:text-blue-500">Serviços.</span>
+  </h1>
   <br><br>
   <div class="sm:grid lg:grid-cols-3 sm:grid-cols-2 gap-10">
-    <div class="hover:bg-blue-900 dark:hover:bg-blue-700 hover:text-white transition duration-300 max-w-sm rounded overflow-hidden shadow-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white">
-      <div class="py-4 px-8">
-        <img src="https://tailwindcss.com/img/jonathan.jpg" class="rounded-full h-12 w-12 mb-4">
-        <a href="#">
-          <h4 class="text-lg mb-3 font-semibold">How to be effective at working remotely?</h4>
-        </a>
-        <p class="mb-2 text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+    <template x-for="(card, index) in cards" :key="index">
+      <div
+        class="max-w-sm rounded overflow-hidden shadow-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white transition duration-300"
+        :class="currentCard === index ? 'scale-105 opacity-100' : 'opacity-50 blur-sm'"
+        @mouseover="stopAutoplay()"
+        @mouseleave="startAutoplay()"
+        @click="setCard(index)"
+      >
+        <div class="py-4 px-8">
+          <img :src="card.avatar" class="rounded-full h-12 w-12 mb-4">
+          <a href="#">
+            <h4 class="text-lg mb-3 font-semibold" x-text="card.title"></h4>
+          </a>
+          <p class="mb-2 text-sm" x-text="card.description"></p>
 
-        <img src="https://images.pexels.com/photos/461077/pexels-photo-461077.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500" class="w-100 rounded-lg">
+          <img :src="card.image" class="w-100 rounded-lg">
 
-        <hr class="mt-4 border-gray-300 dark:border-gray-600">
-        <span class="text-xs">ARTICLE</span>
-        &nbsp;<span class="text-xs">PROCESS</span>
+          <hr class="mt-4 border-gray-300 dark:border-gray-600">
+          <span class="text-xs" x-text="card.category"></span>
+          &nbsp;<span class="text-xs" x-text="card.tag"></span>
+        </div>
       </div>
-    </div>
-
-    <div class="hover:bg-blue-900 dark:hover:bg-blue-700 hover:text-white transition duration-300 max-w-sm rounded overflow-hidden shadow-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white">
-      <div class="py-4 px-8">
-        <img src="https://tailwindcss.com/img/jonathan.jpg" class="rounded-full h-12 w-12 mb-4">
-        <a href="#">
-          <h4 class="text-lg mb-3 font-semibold">How to be effective at working remotely?</h4>
-        </a>
-        <p class="mb-2 text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-
-        <img src="https://images.pexels.com/photos/461077/pexels-photo-461077.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500" class="w-100 rounded-lg">
-
-        <hr class="mt-4 border-gray-300 dark:border-gray-600">
-        <span class="text-xs">ARTICLE</span>
-        &nbsp;<span class="text-xs">PROCESS</span>
-      </div>
-    </div>
-
-    <div class="hover:bg-blue-900 dark:hover:bg-blue-700 hover:text-white transition duration-300 max-w-sm rounded overflow-hidden shadow-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white">
-      <div class="py-4 px-8">
-        <img src="https://tailwindcss.com/img/jonathan.jpg" class="rounded-full h-12 w-12 mb-4">
-        <a href="#">
-          <h4 class="text-lg mb-3 font-semibold">How to be effective at working remotely?</h4>
-        </a>
-        <p class="mb-2 text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-
-        <img src="https://images.pexels.com/photos/461077/pexels-photo-461077.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500" class="w-100 rounded-lg">
-
-        <hr class="mt-4 border-gray-300 dark:border-gray-600">
-        <span class="text-xs">ARTICLE</span>
-        &nbsp;<span class="text-xs">PROCESS</span>
-      </div>
-    </div>
+    </template>
   </div>
 </div>
 <br><br>

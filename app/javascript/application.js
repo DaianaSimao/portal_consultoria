@@ -65,7 +65,7 @@ themeToggleBtn.addEventListener('click', function() {
 //--------------------------------------------------------
 
 
-// Intersection Observer 
+// Carrosel equipe
 const testimonials = document.querySelectorAll('.testimonial');
 
 const observer = new IntersectionObserver((entries, observer) => {
@@ -170,5 +170,58 @@ document.addEventListener('alpine:init', () => {
       stopAutoplay() {
           clearInterval(this.interval);
       },
+  }));
+});
+
+//--------------------------------------------------------
+
+// Carrossel de cards de serviços
+document.addEventListener('alpine:init', () => {
+  Alpine.data('carousel_bluer', () => ({
+    cards: [
+      {
+        avatar: 'https://tailwindcss.com/img/jonathan.jpg',
+        title: 'How to be effective at working remotely?',
+        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        image: 'https://images.pexels.com/photos/461077/pexels-photo-461077.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+        category: 'ARTICLE',
+        tag: 'PROCESS',
+      },
+      {
+        avatar: 'https://tailwindcss.com/img/jonathan.jpg',
+        title: 'How to manage your time effectively?',
+        description: 'Time management is an essential skill for personal and professional growth.',
+        image: 'https://images.pexels.com/photos/3184304/pexels-photo-3184304.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+        category: 'GUIDE',
+        tag: 'TIME',
+      },
+      {
+        avatar: 'https://tailwindcss.com/img/jonathan.jpg',
+        title: 'How to improve your team communication?',
+        description: 'Effective communication is key to team success and collaboration.',
+        image: 'https://images.pexels.com/photos/3184424/pexels-photo-3184424.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+        category: 'TIP',
+        tag: 'COMMUNICATION',
+      },
+    ],
+    currentCard: 0,
+    autoplayInterval: null,
+    startAutoplay() {
+      this.autoplayInterval = setInterval(() => {
+        this.nextCard();
+      }, 3000);
+    },
+    stopAutoplay() {
+      clearInterval(this.autoplayInterval);
+    },
+    nextCard() {
+      this.currentCard = (this.currentCard + 1) % this.cards.length;
+    },
+    setCard(index) {
+      this.currentCard = index; // Atualiza o card ativo
+    },
+    init() {
+      this.startAutoplay();
+    },
   }));
 });
