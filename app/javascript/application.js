@@ -89,25 +89,25 @@ document.addEventListener('alpine:init', () => {
   Alpine.data('slider', () => ({
     active: 0,
     autorotate: true,
-    autorotateTiming: 7000,
+    autorotateTiming: 5000,
     testimonials: [
       {
         img: 'https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp',
         quote: "The ability to capture responses is a game-changer. If a user gets tired of the sign up and leaves, that data is still persisted. Additionally, it's great to select between formats.",
         name: 'Jessie J',
-        role: 'Acme LTD'
+        role: 'Product Onwer, Acme LTD'
       },
       {
         img: 'https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp',
         quote: "Having the power to capture user feedback is revolutionary. Even if a participant abandons the sign-up process midway, their valuable input remains intact.",
         name: 'Nick V',
-        role: 'Malika Inc.'
+        role: 'CEO, Malika Inc.'
       },
       {
         img: 'https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(3).webp',
         quote: "The functionality to capture responses is a true game-changer. Even if a user becomes fatigued during sign-up and abandons the process, their information remains stored.",
         name: 'Amelia W',
-        role: 'Panda AI'
+        role: 'CEO, Panda AI'
       },
     ],
     init() {
@@ -180,7 +180,7 @@ document.addEventListener('alpine:init', () => {
   Alpine.data('carousel_bluer', () => ({
     cards: [
       {
-        avatar: 'https://tailwindcss.com/img/jonathan.jpg',
+        avatar: 'https://www.alefsi.com/wp-content/uploads/2018/07/consultoria-TI.jpg',
         title: 'How to be effective at working remotely?',
         description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
         image: 'https://images.pexels.com/photos/461077/pexels-photo-461077.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
@@ -188,7 +188,7 @@ document.addEventListener('alpine:init', () => {
         tag: 'PROCESS',
       },
       {
-        avatar: 'https://tailwindcss.com/img/jonathan.jpg',
+        avatar: 'https://www.alefsi.com/wp-content/uploads/2018/07/consultoria-TI.jpg',
         title: 'How to manage your time effectively?',
         description: 'Time management is an essential skill for personal and professional growth.',
         image: 'https://images.pexels.com/photos/3184304/pexels-photo-3184304.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
@@ -196,7 +196,7 @@ document.addEventListener('alpine:init', () => {
         tag: 'TIME',
       },
       {
-        avatar: 'https://tailwindcss.com/img/jonathan.jpg',
+        avatar: 'https://www.alefsi.com/wp-content/uploads/2018/07/consultoria-TI.jpg',
         title: 'How to improve your team communication?',
         description: 'Effective communication is key to team success and collaboration.',
         image: 'https://images.pexels.com/photos/3184424/pexels-photo-3184424.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
