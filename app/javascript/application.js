@@ -131,6 +131,7 @@ document.addEventListener('alpine:init', () => {
 })
 //--------------------------------------------------------
 
+// Autoplay do slide
 document.addEventListener('alpine:init', () => {
   Alpine.data('carousel', (carouselData = {
       slides: [],

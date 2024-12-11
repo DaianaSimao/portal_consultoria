@@ -11548,6 +11548,41 @@ document.addEventListener("alpine:init", () => {
     }
   }));
 });
+document.addEventListener("alpine:init", () => {
+  Alpine.data("carousel", (carouselData = {
+    slides: []
+  }) => ({
+    slides: carouselData.slides,
+    currentSlideIndex: 1,
+    interval: null,
+    // Para armazenar o ID do intervalo
+    init() {
+      this.startAutoplay();
+    },
+    previous() {
+      if (this.currentSlideIndex > 1) {
+        this.currentSlideIndex--;
+      } else {
+        this.currentSlideIndex = this.slides.length;
+      }
+    },
+    next() {
+      if (this.currentSlideIndex < this.slides.length) {
+        this.currentSlideIndex++;
+      } else {
+        this.currentSlideIndex = 1;
+      }
+    },
+    startAutoplay() {
+      this.interval = setInterval(() => {
+        this.next();
+      }, 3e3);
+    },
+    stopAutoplay() {
+      clearInterval(this.interval);
+    }
+  }));
+});
 /*! Bundled license information:
 
 @hotwired/turbo/dist/turbo.es2017-esm.js:
