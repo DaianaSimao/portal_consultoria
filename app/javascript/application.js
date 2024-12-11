@@ -93,19 +93,19 @@ document.addEventListener('alpine:init', () => {
     testimonials: [
       {
         img: 'https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp',
-        quote: "The ability to capture responses is a game-changer. If a user gets tired of the sign up and leaves, that data is still persisted. Additionally, it's great to select between formats.",
+        quote: "A equipe da Upgrade Tech transformou completamente nossa infraestrutura de TI. Hoje, temos sistemas mais rápidos, seguros e adaptados ao crescimento da empresa.",
         name: 'Jessie J',
         role: 'Product Onwer, Acme LTD'
       },
       {
         img: 'https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp',
-        quote: "Having the power to capture user feedback is revolutionary. Even if a participant abandons the sign-up process midway, their valuable input remains intact.",
+        quote: "A consultoria foi um divisor de águas para o nosso negócio. A expertise da equipe garantiu soluções eficientes e um suporte de primeira.",
         name: 'Nick V',
         role: 'CEO, Malika Inc.'
       },
       {
         img: 'https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(3).webp',
-        quote: "The functionality to capture responses is a true game-changer. Even if a user becomes fatigued during sign-up and abandons the process, their information remains stored.",
+        quote: "Graças ao trabalho da Upgrade Tech, reduzimos custos operacionais e aumentamos nossa produtividade. A parceria superou todas as expectativas!",
         name: 'Amelia W',
         role: 'CEO, Panda AI'
       },
@@ -181,24 +181,32 @@ document.addEventListener('alpine:init', () => {
     cards: [
       {
         avatar: 'https://www.alefsi.com/wp-content/uploads/2018/07/consultoria-TI.jpg',
-        title: 'How to be effective at working remotely?',
-        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        title: 'Entendimento e Planejamento',
+        description: 'Na Upgrade Tech, o primeiro passo é compreender as necessidades e objetivos do seu negócio. \
+                      Realizamos um levantamento detalhado para identificar desafios e oportunidades, garantindo que \
+                      o software seja alinhado à sua estratégia e entregue com alta qualidade.',
         image: 'https://images.pexels.com/photos/461077/pexels-photo-461077.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
         category: 'ARTICLE',
         tag: 'PROCESS',
       },
       {
         avatar: 'https://www.alefsi.com/wp-content/uploads/2018/07/consultoria-TI.jpg',
-        title: 'How to manage your time effectively?',
-        description: 'Time management is an essential skill for personal and professional growth.',
+        title: ' Desenvolvimento Personalizado',
+        description: 'Nossa equipe de desenvolvedores trabalha em estreita colaboração \
+                      com você para criar soluções sob medida. Utilizamos tecnologias modernas, \
+                      metodologias ágeis e boas práticas de mercado para garantir um desenvolvimento \
+                      eficiente, escalável e dentro do prazo.',
         image: 'https://images.pexels.com/photos/3184304/pexels-photo-3184304.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
         category: 'GUIDE',
         tag: 'TIME',
       },
       {
         avatar: 'https://www.alefsi.com/wp-content/uploads/2018/07/consultoria-TI.jpg',
-        title: 'How to improve your team communication?',
-        description: 'Effective communication is key to team success and collaboration.',
+        title: 'Entrega e Suporte Contínuo',
+        description: 'Além de entregar um software robusto e funcional, oferecemos suporte \
+                      contínuo para garantir que o sistema atenda às suas expectativas no dia \
+                      a dia. Estamos prontos para realizar melhorias e adaptações conforme o \
+                      crescimento do seu negócio.',
         image: 'https://images.pexels.com/photos/3184424/pexels-photo-3184424.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
         category: 'TIP',
         tag: 'COMMUNICATION',

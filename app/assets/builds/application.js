@@ -11508,25 +11508,25 @@ document.addEventListener("alpine:init", () => {
   Alpine.data("slider", () => ({
     active: 0,
     autorotate: true,
-    autorotateTiming: 7e3,
+    autorotateTiming: 5e3,
     testimonials: [
       {
         img: "https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp",
-        quote: "The ability to capture responses is a game-changer. If a user gets tired of the sign up and leaves, that data is still persisted. Additionally, it's great to select between formats.",
+        quote: "A equipe da Upgrade Tech transformou completamente nossa infraestrutura de TI. Hoje, temos sistemas mais r\xE1pidos, seguros e adaptados ao crescimento da empresa.",
         name: "Jessie J",
-        role: "Acme LTD"
+        role: "Product Onwer, Acme LTD"
       },
       {
         img: "https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp",
-        quote: "Having the power to capture user feedback is revolutionary. Even if a participant abandons the sign-up process midway, their valuable input remains intact.",
+        quote: "A consultoria foi um divisor de \xE1guas para o nosso neg\xF3cio. A expertise da equipe garantiu solu\xE7\xF5es eficientes e um suporte de primeira.",
         name: "Nick V",
-        role: "Malika Inc."
+        role: "CEO, Malika Inc."
       },
       {
         img: "https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(3).webp",
-        quote: "The functionality to capture responses is a true game-changer. Even if a user becomes fatigued during sign-up and abandons the process, their information remains stored.",
+        quote: "Gra\xE7as ao trabalho da Upgrade Tech, reduzimos custos operacionais e aumentamos nossa produtividade. A parceria superou todas as expectativas!",
         name: "Amelia W",
-        role: "Panda AI"
+        role: "CEO, Panda AI"
       }
     ],
     init() {
@@ -11580,6 +11580,55 @@ document.addEventListener("alpine:init", () => {
     },
     stopAutoplay() {
       clearInterval(this.interval);
+    }
+  }));
+});
+document.addEventListener("alpine:init", () => {
+  Alpine.data("carousel_bluer", () => ({
+    cards: [
+      {
+        avatar: "https://www.alefsi.com/wp-content/uploads/2018/07/consultoria-TI.jpg",
+        title: "Entendimento e Planejamento",
+        description: "Na Upgrade Tech, o primeiro passo \xE9 compreender as necessidades e objetivos do seu neg\xF3cio.                       Realizamos um levantamento detalhado para identificar desafios e oportunidades, garantindo que                       o software seja alinhado \xE0 sua estrat\xE9gia e entregue com alta qualidade.",
+        image: "https://images.pexels.com/photos/461077/pexels-photo-461077.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        category: "ARTICLE",
+        tag: "PROCESS"
+      },
+      {
+        avatar: "https://www.alefsi.com/wp-content/uploads/2018/07/consultoria-TI.jpg",
+        title: " Desenvolvimento Personalizado",
+        description: "Nossa equipe de desenvolvedores trabalha em estreita colabora\xE7\xE3o                       com voc\xEA para criar solu\xE7\xF5es sob medida. Utilizamos tecnologias modernas,                       metodologias \xE1geis e boas pr\xE1ticas de mercado para garantir um desenvolvimento                       eficiente, escal\xE1vel e dentro do prazo.",
+        image: "https://images.pexels.com/photos/3184304/pexels-photo-3184304.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        category: "GUIDE",
+        tag: "TIME"
+      },
+      {
+        avatar: "https://www.alefsi.com/wp-content/uploads/2018/07/consultoria-TI.jpg",
+        title: "Entrega e Suporte Cont\xEDnuo",
+        description: "Al\xE9m de entregar um software robusto e funcional, oferecemos suporte                       cont\xEDnuo para garantir que o sistema atenda \xE0s suas expectativas no dia                       a dia. Estamos prontos para realizar melhorias e adapta\xE7\xF5es conforme o                       crescimento do seu neg\xF3cio.",
+        image: "https://images.pexels.com/photos/3184424/pexels-photo-3184424.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        category: "TIP",
+        tag: "COMMUNICATION"
+      }
+    ],
+    currentCard: 0,
+    autoplayInterval: null,
+    startAutoplay() {
+      this.autoplayInterval = setInterval(() => {
+        this.nextCard();
+      }, 3e3);
+    },
+    stopAutoplay() {
+      clearInterval(this.autoplayInterval);
+    },
+    nextCard() {
+      this.currentCard = (this.currentCard + 1) % this.cards.length;
+    },
+    setCard(index) {
+      this.currentCard = index;
+    },
+    init() {
+      this.startAutoplay();
     }
   }));
 });
