@@ -68,17 +68,31 @@ themeToggleBtn.addEventListener('click', function() {
 // Carrosel equipe
 const testimonials = document.querySelectorAll('.testimonial');
 
-const observer = new IntersectionObserver((entries, observer) => {
+const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-      observer.unobserve(entry.target);
+      entry.target.classList.add('show'); // Aplica a classe quando visível
+    } else {
+      entry.target.classList.remove('show'); // Remove a classe se sair do viewport
     }
   });
-}, { threshold: 0.9 });
+}, { 
+  threshold: 0.1, // Detecta quando 10% do elemento está visível
+  rootMargin: '0px 0px -50px 0px' // Antecipação na detecção
+});
 
+// Observa todos os elementos
 testimonials.forEach(testimonial => {
   observer.observe(testimonial);
+});
+
+// Verifica se os elementos já estão visíveis (útil para links internos)
+window.addEventListener('load', () => {
+  testimonials.forEach(testimonial => {
+    if (testimonial.getBoundingClientRect().top < window.innerHeight) {
+      testimonial.classList.add('show');
+    }
+  });
 });
 
 //--------------------------------------------------------
@@ -217,7 +231,7 @@ document.addEventListener('alpine:init', () => {
     startAutoplay() {
       this.autoplayInterval = setInterval(() => {
         this.nextCard();
-      }, 3000);
+      }, 2000);
     },
     stopAutoplay() {
       clearInterval(this.autoplayInterval);
@@ -232,4 +246,21 @@ document.addEventListener('alpine:init', () => {
       this.startAutoplay();
     },
   }));
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const target = document.querySelector(this.getAttribute('href'));
+    target.scrollIntoView({
+      behavior: 'smooth', 
+      block: 'start',
+    });
+
+    // Forçar Alpine.js a reavaliar após a navegação
+    setTimeout(() => {
+      document.dispatchEvent(new Event('alpine:init'));
+    }, 500); // Tempo suficiente para o scroll suave concluir
+  });
 });
