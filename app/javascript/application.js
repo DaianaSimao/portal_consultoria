@@ -200,8 +200,6 @@ document.addEventListener('alpine:init', () => {
                       Realizamos um levantamento detalhado para identificar desafios e oportunidades, garantindo que \
                       o software seja alinhado à sua estratégia e entregue com alta qualidade.',
         image: 'https://images.pexels.com/photos/461077/pexels-photo-461077.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-        category: 'ARTICLE',
-        tag: 'PROCESS',
       },
       {
         avatar: 'https://www.alefsi.com/wp-content/uploads/2018/07/consultoria-TI.jpg',
@@ -211,8 +209,6 @@ document.addEventListener('alpine:init', () => {
                       metodologias ágeis e boas práticas de mercado para garantir um desenvolvimento \
                       eficiente, escalável e dentro do prazo.',
         image: 'https://images.pexels.com/photos/3184304/pexels-photo-3184304.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-        category: 'GUIDE',
-        tag: 'TIME',
       },
       {
         avatar: 'https://www.alefsi.com/wp-content/uploads/2018/07/consultoria-TI.jpg',
@@ -222,8 +218,6 @@ document.addEventListener('alpine:init', () => {
                       a dia. Estamos prontos para realizar melhorias e adaptações conforme o \
                       crescimento do seu negócio.',
         image: 'https://images.pexels.com/photos/3184424/pexels-photo-3184424.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-        category: 'TIP',
-        tag: 'COMMUNICATION',
       },
     ],
     currentCard: 0,
