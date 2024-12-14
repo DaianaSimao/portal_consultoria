@@ -11,17 +11,22 @@
   transition-timing-function: linear !important;
   position: relative;
   }
-  .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-  background: #4F46E5 !important;
-  }
 
-  .testimonial {
-    transform: translateY(50px);
-    opacity: 0;
-    transition: all 2s ease-out;
-  }
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+background: #4F46E5 !important;
+}
 
-  .testimonial.show {
-    transform: translateY(0);
-    opacity: 1;
-  }
+.testimonial {
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 2s ease-out;
+}
+
+.testimonial.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
