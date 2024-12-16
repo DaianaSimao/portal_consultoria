@@ -284,26 +284,29 @@
     <div class="relative z-10 container mx-auto my-4 px-4 lg:px-20">
       <div class="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-5xl dark:bg-gray-800">
         <div class="flex">
-          <h1 class="font-bold uppercase text-5xl text-white">Envie-nos uma <br /> ensagem</h1>
+          <h1 class="font-bold uppercase text-5xl text-white">Envie-nos uma <br /> Mensagem</h1>
         </div>
-        <div class="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
-          <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-            type="text" placeholder="Nome*" />
-          <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-            type="text" placeholder="Sobrenome*" />
-          <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-            type="email" placeholder="Email*" />
-          <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-            type="number" placeholder="Celular*" />
-        </div>
-        <div class="my-4">
-          <textarea placeholder="Mensagem*" class="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
-        </div>
-        <div class="my-2 w-1/2 lg:w-1/4">
-          <button class="uppercase text-sm font-bold tracking-wide bg-blue-900 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
-            Enviar
-          </button>
-        </div>
+        <form action="/contacts" method="POST">
+          <div class="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
+            <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              type="text" placeholder="Nome*" name="name" required />
+            <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              type="text" placeholder="Sobrenome*" name="surname" required />
+            <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              type="email" placeholder="Email*" name="email" required />
+            <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              type="number" placeholder="Celular*" name="phone" required />
+          </div>
+          <div class="my-4">
+            <textarea placeholder="Mensagem*" class="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              name="message" required></textarea>
+          </div>
+          <div class="my-2 w-1/2 lg:w-1/4">
+            <button type="submit" class="uppercase text-sm font-bold tracking-wide bg-blue-900 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
+              Enviar
+            </button>
+          </div>
+        </form>
       </div>
 
       <div class="w-full lg:-mt-96 lg:w-2/6 px-8 py-12 ml-auto bg-blue-900 rounded-2xl ">
