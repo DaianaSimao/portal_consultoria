@@ -15,5 +15,7 @@ class ContactsController < ApplicationController
       flash[:alert] = "Houve um problema ao enviar sua mensagem. Tente novamente mais tarde."
       Rails.logger.error "Erro ao enviar mensagem: #{e.message}"
     end
+
+    redirect_to root_path
   end
 end
