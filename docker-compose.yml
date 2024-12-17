@@ -8,4 +8,4 @@ services:
     ports:
       - "3000:3000"
     environment:
-     - SECRET_KEY_BASE=d771ed8d9f767e8c158175dbe2e47aa67e388643d0b8bb4bedb256d015bee85b501a637128c036b3a59dfdb22a33a353ebecc9476b2abca5e3d99cfbebb51fe2
+      - RAILS_ENV=production
