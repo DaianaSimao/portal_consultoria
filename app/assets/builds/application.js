@@ -11493,16 +11493,29 @@ themeToggleBtn.addEventListener("click", function() {
   }
 });
 var testimonials = document.querySelectorAll(".testimonial");
-var observer = new IntersectionObserver((entries, observer2) => {
+var observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
-      observer2.unobserve(entry.target);
+    } else {
+      entry.target.classList.remove("show");
     }
   });
-}, { threshold: 0.9 });
+}, {
+  threshold: 0.1,
+  // Detecta quando 10% do elemento está visível
+  rootMargin: "0px 0px -50px 0px"
+  // Antecipação na detecção
+});
 testimonials.forEach((testimonial) => {
   observer.observe(testimonial);
+});
+window.addEventListener("load", () => {
+  testimonials.forEach((testimonial) => {
+    if (testimonial.getBoundingClientRect().top < window.innerHeight) {
+      testimonial.classList.add("show");
+    }
+  });
 });
 document.addEventListener("alpine:init", () => {
   Alpine.data("slider", () => ({
@@ -11590,25 +11603,19 @@ document.addEventListener("alpine:init", () => {
         avatar: "https://www.alefsi.com/wp-content/uploads/2018/07/consultoria-TI.jpg",
         title: "Entendimento e Planejamento",
         description: "Na Upgrade Tech, o primeiro passo \xE9 compreender as necessidades e objetivos do seu neg\xF3cio.                       Realizamos um levantamento detalhado para identificar desafios e oportunidades, garantindo que                       o software seja alinhado \xE0 sua estrat\xE9gia e entregue com alta qualidade.",
-        image: "https://images.pexels.com/photos/461077/pexels-photo-461077.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        category: "ARTICLE",
-        tag: "PROCESS"
+        image: "https://images.pexels.com/photos/461077/pexels-photo-461077.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
       },
       {
         avatar: "https://www.alefsi.com/wp-content/uploads/2018/07/consultoria-TI.jpg",
         title: " Desenvolvimento Personalizado",
         description: "Nossa equipe de desenvolvedores trabalha em estreita colabora\xE7\xE3o                       com voc\xEA para criar solu\xE7\xF5es sob medida. Utilizamos tecnologias modernas,                       metodologias \xE1geis e boas pr\xE1ticas de mercado para garantir um desenvolvimento                       eficiente, escal\xE1vel e dentro do prazo.",
-        image: "https://images.pexels.com/photos/3184304/pexels-photo-3184304.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        category: "GUIDE",
-        tag: "TIME"
+        image: "https://images.pexels.com/photos/3184304/pexels-photo-3184304.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
       },
       {
         avatar: "https://www.alefsi.com/wp-content/uploads/2018/07/consultoria-TI.jpg",
         title: "Entrega e Suporte Cont\xEDnuo",
         description: "Al\xE9m de entregar um software robusto e funcional, oferecemos suporte                       cont\xEDnuo para garantir que o sistema atenda \xE0s suas expectativas no dia                       a dia. Estamos prontos para realizar melhorias e adapta\xE7\xF5es conforme o                       crescimento do seu neg\xF3cio.",
-        image: "https://images.pexels.com/photos/3184424/pexels-photo-3184424.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        category: "TIP",
-        tag: "COMMUNICATION"
+        image: "https://images.pexels.com/photos/3184424/pexels-photo-3184424.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
       }
     ],
     currentCard: 0,
@@ -11616,7 +11623,7 @@ document.addEventListener("alpine:init", () => {
     startAutoplay() {
       this.autoplayInterval = setInterval(() => {
         this.nextCard();
-      }, 3e3);
+      }, 2e3);
     },
     stopAutoplay() {
       clearInterval(this.autoplayInterval);
@@ -11631,6 +11638,19 @@ document.addEventListener("alpine:init", () => {
       this.startAutoplay();
     }
   }));
+});
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute("href"));
+    target.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+    setTimeout(() => {
+      document.dispatchEvent(new Event("alpine:init"));
+    }, 500);
+  });
 });
 /*! Bundled license information:
 
