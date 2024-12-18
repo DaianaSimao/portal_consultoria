@@ -26,42 +26,46 @@ var swiper = new Swiper(".progress-slide-carousel", {
 //--------------------------------------------------------
 
 // Dark Mode
+// Seleção dos elementos
 var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
 var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
-
 var themeToggleBtn = document.getElementById('theme-toggle');
 
-if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+// Inicialização do tema
+function initializeTheme() {
+  const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const savedTheme = localStorage.getItem('color-theme');
+
+  if (savedTheme === 'dark' || (!savedTheme && userPrefersDark)) {
     document.documentElement.classList.add('dark');
+    themeToggleDarkIcon.classList.add('hidden');
     themeToggleLightIcon.classList.remove('hidden');
-} else {
+  } else {
     document.documentElement.classList.remove('dark');
     themeToggleDarkIcon.classList.remove('hidden');
+    themeToggleLightIcon.classList.add('hidden');
+  }
 }
 
-themeToggleBtn.addEventListener('click', function() {
-    themeToggleDarkIcon.classList.toggle('hidden');
-    themeToggleLightIcon.classList.toggle('hidden');
+// Alternância do tema
+function toggleTheme() {
+  themeToggleDarkIcon.classList.toggle('hidden');
+  themeToggleLightIcon.classList.toggle('hidden');
 
-    if (localStorage.getItem('color-theme')) {
-        if (localStorage.getItem('color-theme') === 'light') {
-            document.documentElement.classList.add('dark');
-            localStorage.setItem('color-theme', 'dark');
-        } else {
-            document.documentElement.classList.remove('dark');
-            localStorage.setItem('color-theme', 'light');
-        }
-    } else {
-        if (document.documentElement.classList.contains('dark')) {
-            document.documentElement.classList.remove('dark');
-            localStorage.setItem('color-theme', 'light');
-        } else {
-            document.documentElement.classList.add('dark');
-            localStorage.setItem('color-theme', 'dark');
-        }
-    }
-});
+  if (document.documentElement.classList.contains('dark')) {
+    document.documentElement.classList.remove('dark');
+    localStorage.setItem('color-theme', 'light');
+  } else {
+    document.documentElement.classList.add('dark');
+    localStorage.setItem('color-theme', 'dark');
+  }
+}
 
+// Inicialização ao carregar a página
+initializeTheme();
+
+// Evento de clique no botão
+themeToggleBtn.addEventListener('click', toggleTheme);
 //--------------------------------------------------------
 
 

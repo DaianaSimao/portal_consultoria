@@ -12,7 +12,7 @@ module.exports = {
   plugins: [ // Correção aqui: altere 'plugin' para 'plugins'
     require("tw-elements/plugin.cjs"),
   ],
-  darkMode: 'media',
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
