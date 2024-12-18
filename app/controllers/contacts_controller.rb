@@ -1,10 +1,9 @@
 class ContactsController < ApplicationController
   def create
-    # Pega os parâmetros do formulário
     contact_params = params.permit(:name, :surname, :email, :phone, :message)
 
     begin
-      # Envia o e-mail usando o ContactMailer
+      # Envia o e-mail
       ContactMailer.contact_email(
         contact_params[:name],
         contact_params[:surname],
@@ -21,7 +20,13 @@ class ContactsController < ApplicationController
       Rails.logger.error "Erro ao enviar mensagem: #{e.message}"
     end
 
-    # Redireciona de volta para a página inicial
-    redirect_to root_path
+    respond_to do |format|
+      format.turbo_stream do
+        render turbo_stream: turbo_stream.replace('flash-messages', partial: 'shared/flash')
+      end
+      format.html do
+        redirect_to root_path
+      end
+    end
   end
 end
