@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    .header {
+      background: #4CAF50;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 1.5em;
+    }
+    .content {
+      padding: 20px;
+    }
+    .field {
+      margin-bottom: 15px;
+    }
+    .field label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+    .footer {
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9em;
+      color: #666;
+      border-top: 1px solid #ddd;
+      background: #f1f1f1;
+    }
+
+    {
+      h1 {
+        font-size: 2em;
+        margin: 0;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="flex items-center space-x-3 rtl:space-x-reverse">
+    <img src="https://img.icons8.com/?size=30&id=N5H8YRvduAGy&format=png&color=000000" class="h-2" alt="Flowbite Logo">
+      <span class="self-center text-5xl font-semibold whitespace-nowrap dark:text-white">Upgrade Tech</span>
+    </h1>
+    <div class="header">
+      Nova Mensagem de Contato
+    </div>
+    <div class="content">
+      <p>Você recebeu uma nova mensagem de contato com as seguintes informações:</p>
+      <div class="field">
+        <label>Nome:</label>
+        <span><%= @name %> <%= @surname %></span>
+      </div>
+      <div class="field">
+        <label>E-mail:</label>
+        <span><%= @user_email %></span>
+      </div>
+      <div class="field">
+        <label>Telefone:</label>
+        <span><%= @phone %></span>
+      </div>
+      <div class="field">
+        <label>Mensagem:</label>
+        <p><%= @message %></p>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Essa é uma mensagem automática. Por favor, não responda.</p>
+    </div>
+  </div>
+</body>
+</html>

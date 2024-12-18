@@ -1,16 +1,16 @@
 class ContactMailer < ApplicationMailer
-  default from: 'from@example.com'
-
   def contact_email(name, surname, email, phone, message)
     @name = name
     @surname = surname
-    @message = message
     @phone = phone
-    @email = email
+    @message = message
+    @user_email = email
 
-    mail(to: 'marilene.llima.201@gmail.com', subject: 'Novo Contato pelo Formulário') do |format|
-      format.text { render plain: "Mensagem de #{@name} #{@surname}\n\n#{@message}" }
-      format.html { render html: "<strong>Mensagem de #{@name} #{@surname}</strong><br><p>#{@message}</p>".html_safe }
+    mail(
+      to: 'marilene.llima.201@gmail.com',
+      subject: 'Nova Mensagem de Contato'
+    ) do |format|
+      format.html { render 'contact_email' }
     end
   end
 end
